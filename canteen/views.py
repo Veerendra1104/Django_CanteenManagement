@@ -61,3 +61,7 @@ def register(request):
 
 def item(request):
     return render(request, "itempage.html")
+
+
+def about(request):
+    return render(request, "about.html")

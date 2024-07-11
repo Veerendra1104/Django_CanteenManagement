@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from canteen.views import home,index, login, register, item
+from canteen.views import home,index, login, register, item, about
 
 admin.site.site_title = "Pes Canteen"
 admin.site.site_header="Pes canteen"
@@ -27,5 +27,6 @@ urlpatterns = [
     path('login/', login, name='login'),
     path('register/', register, name='register'),
     path('item/', item, name='item'),
+    path('about/', about, name='about'),
 ]
 
